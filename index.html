@@ -3,243 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>彡𝔽𝕣𝕒𝕟𝕟𝕫𝕚 𝕃𝕦𝕩彡 - Founder & CEO of Lux Tech Empire</title>
+    <title>Frannzi Lux — Web Developer & Digital Brand Builder</title>
+    <meta name="description" content="Frannzi Lux is a web developer and digital brand builder specializing in web development, automation, and visual identity — founder of Lux Tech Empire.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="dark-mode">
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg class="moon-icon active" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-    </button>
 
-    <!-- Sidebar Navigation Trigger -->
-    <button class="nav-trigger" id="navTrigger" aria-label="Open navigation">
-        <div class="nav-trigger-icon">
-            <div class="nav-trigger-left"></div>
-            <div class="nav-trigger-right"></div>
-        </div>
-    </button>
+    <!-- Top Navigation -->
+    <header class="topbar" id="topbar">
+        <div class="topbar-inner container">
+            <a href="#hero" class="wordmark">Frannzi Lux</a>
 
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar" id="sidebar">
-        <div class="sidebar-content">
-            <div class="sidebar-header">
-                <img src="lux.png" alt="Lux Tech Empire Logo" class="sidebar-logo">
-                <h3 class="sidebar-name">彡𝔽𝕣𝕒𝕟𝕟𝕫𝕚 𝕃𝕦𝕩彡</h3>
-                <p class="sidebar-title">Founder & CEO</p>
+            <nav class="primary-nav" aria-label="Primary">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#capabilities" class="nav-link">Capabilities</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="topbar-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+                    <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon active" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <ul class="sidebar-menu">
-                <li><a href="#hero" class="sidebar-link">Home</a></li>
-                <li><a href="#about" class="sidebar-link">About</a></li>
-                <li><a href="#capabilities" class="sidebar-link">Capabilities</a></li>
-                <li><a href="#spotlight" class="sidebar-link">Leadership</a></li>
-                <li><a href="#contact" class="sidebar-link">Connect</a></li>
-            </ul>
         </div>
-    </nav>
 
-    <!-- Sidebar Overlay -->
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <!-- Mobile menu panel -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#capabilities" class="mobile-link">Capabilities</a>
+            <a href="#leadership" class="mobile-link">Leadership</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </header>
 
-    <!-- Main Content -->
     <main class="main-content">
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="hero-background">
-                <div class="gradient-mesh"></div>
-            </div>
-            <div class="hero-content container">
-                <img src="lux.png" alt="Lux Tech Empire Logo" class="hero-logo">
-                <h1 class="hero-name">彡𝔽𝕣𝕒𝕟𝕟𝕫𝕚 𝕃𝕦𝕩彡</h1>
-                <h2 class="hero-title">Founder & CEO of Lux Tech Empire</h2>
-                <p class="hero-tagline">"The Empire of Digital Brilliance"</p>
-                <p class="hero-intro">Builder of digital ecosystems. Creator of innovative technology. Architect of distinctive brands.</p>
-                <div class="scroll-indicator">
-                    <div class="scroll-line"></div>
-                    <span class="scroll-text">Explore</span>
-                </div>
-            </div>
-        </section>
 
-        <!-- About Section -->
-        <section class="about" id="about">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Introduction</span>
-                    <h2 class="section-title">About the Founder</h2>
-                </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p class="about-paragraph">As the creator of Lux Tech Empire, I represent the convergence of development mastery and design excellence. My journey transcends traditional boundaries, fusing technical precision with creative vision to build digital systems that define the future.</p>
-                        <p class="about-paragraph">Specializing in web development, bot architecture, and visual branding, I craft comprehensive digital experiences that blend functionality with aesthetic sophistication. Each project is approached as an opportunity to push the boundaries of what technology can achieve when paired with intentional design.</p>
-                        <p class="about-paragraph">My passion lies in constructing innovative solutions that don't just meet requirements—they set new standards. From Python-powered automation to meticulously designed brand identities, I architect the digital presence that ambitious visions deserve.</p>
-                        <p class="about-paragraph">Lux Tech Empire stands as a testament to the belief that exceptional digital work emerges from the intersection of code, creativity, and unwavering commitment to excellence.</p>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-motif" aria-hidden="true">
+                <svg viewBox="0 0 400 400" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                    <circle cx="200" cy="200" r="150" fill="none" stroke="currentColor" stroke-width="0.75"></circle>
+                    <circle cx="200" cy="200" r="110" fill="none" stroke="currentColor" stroke-width="0.75"></circle>
+                    <line x1="200" y1="20" x2="200" y2="70" stroke="currentColor" stroke-width="0.75"></line>
+                    <line x1="200" y1="330" x2="200" y2="380" stroke="currentColor" stroke-width="0.75"></line>
+                </svg>
+            </div>
+            <div class="container hero-grid">
+                <p class="hero-eyebrow">Founder, Lux Tech Empire</p>
+                <h1 class="hero-name">Frannzi&nbsp;Lux</h1>
+                <div class="hero-right">
+                    <p class="hero-role">Web Developer &amp; Digital Brand Builder</p>
+                    <p class="hero-intro">I build web products, automation tools, and visual identities for people who need their digital presence to work as hard as they do. Every project starts with the problem, not the technology.</p>
+                    <div class="hero-actions">
+                        <a href="#capabilities" class="btn btn-primary">See what I do</a>
+                        <a href="#contact" class="btn btn-ghost">Get in touch</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Capabilities Section -->
+        <!-- About -->
+        <section class="about" id="about">
+            <div class="container about-grid">
+                <div class="about-label-col">
+                    <span class="eyebrow">About</span>
+                    <h2 class="section-title">Background</h2>
+                </div>
+                <div class="about-text-col">
+                    <p class="about-paragraph">I work at the intersection of development and design — building the technical foundation of a product and the visual language around it, rather than treating them as separate jobs handed to separate people. That combination is what Lux Tech Empire was built on.</p>
+                    <p class="about-paragraph">My work spans web development, bot and automation systems, and brand identity: sites and interfaces that hold up under real use, Python-driven tools that remove repetitive work, and visual identities that give a project a distinct presence rather than a generic one.</p>
+                    <p class="about-paragraph">I care about the parts that are easy to skip — load times, spacing, the way a button responds when you click it, whether a logo still works at sixteen pixels. Those details are usually the difference between something that looks finished and something that actually is.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities -->
         <section class="capabilities" id="capabilities">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">Expertise</span>
-                    <h2 class="section-title">Core Capabilities</h2>
+                    <span class="eyebrow">Capabilities</span>
+                    <h2 class="section-title">What I do</h2>
                 </div>
-                <div class="capabilities-grid">
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                        </div>
-                        <h3 class="capability-title">Web Development</h3>
-                        <p class="capability-description">Crafting sophisticated web applications with modern frameworks and clean, maintainable code architecture.</p>
+
+                <div class="capability-groups">
+                    <div class="capability-group">
+                        <h3 class="group-title">Development</h3>
+                        <ul class="capability-list">
+                            <li class="capability-item">
+                                <div class="capability-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="capability-copy">
+                                    <h4 class="capability-title">Web Development</h4>
+                                    <p class="capability-description">Responsive sites and web applications built with modern frameworks and code that's meant to be maintained, not just shipped.</p>
+                                </div>
+                            </li>
+                            <li class="capability-item">
+                                <div class="capability-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path>
+                                        <polyline points="2.32 6.16 12 11 21.68 6.16"></polyline>
+                                        <line x1="12" y1="22.76" x2="12" y2="11"></line>
+                                    </svg>
+                                </div>
+                                <div class="capability-copy">
+                                    <h4 class="capability-title">Backend &amp; Python</h4>
+                                    <p class="capability-description">Backend systems, scripts, and data processing built in Python, focused on reliability over cleverness.</p>
+                                </div>
+                            </li>
+                            <li class="capability-item">
+                                <div class="capability-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </div>
+                                <div class="capability-copy">
+                                    <h4 class="capability-title">Automation &amp; Bots</h4>
+                                    <p class="capability-description">Telegram bots and automation workflows that take repetitive, manual processes off someone's plate.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
-                        </div>
-                        <h3 class="capability-title">Frontend Interface Design</h3>
-                        <p class="capability-description">Designing intuitive, responsive interfaces that balance aesthetic excellence with optimal user experience.</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="capability-title">Telegram Bot Development</h3>
-                        <p class="capability-description">Building intelligent automation systems and interactive bot solutions for seamless communication workflows.</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path>
-                                <polyline points="2.32 6.16 12 11 21.68 6.16"></polyline>
-                                <line x1="12" y1="22.76" x2="12" y2="11"></line>
-                            </svg>
-                        </div>
-                        <h3 class="capability-title">Python Programming</h3>
-                        <p class="capability-description">Developing robust backend systems, automation scripts, and data processing solutions with Python excellence.</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                                <polyline points="21 15 16 10 5 21"></polyline>
-                            </svg>
-                        </div>
-                        <h3 class="capability-title">Graphic Design</h3>
-                        <p class="capability-description">Creating compelling visual compositions that communicate brand identity with precision and artistic flair.</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                            </svg>
-                        </div>
-                        <h3 class="capability-title">Logo Creation</h3>
-                        <p class="capability-description">Designing distinctive brand marks that capture essence and establish memorable visual identities.</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                                <circle cx="12" cy="13" r="4"></circle>
-                            </svg>
-                        </div>
-                        <h3 class="capability-title">Photo Editing</h3>
-                        <p class="capability-description">Transforming visual content through expert retouching, composition, and color grading techniques.</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="capability-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="capability-title">Brand Visual Design</h3>
-                        <p class="capability-description">Architecting cohesive visual systems that define brand presence across all digital touchpoints.</p>
+
+                    <div class="capability-group">
+                        <h3 class="group-title">Design &amp; Brand</h3>
+                        <ul class="capability-list">
+                            <li class="capability-item">
+                                <div class="capability-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                </div>
+                                <div class="capability-copy">
+                                    <h4 class="capability-title">Interface Design</h4>
+                                    <p class="capability-description">Interfaces built around how people actually use them — clear hierarchy, sensible defaults, few surprises.</p>
+                                </div>
+                            </li>
+                            <li class="capability-item">
+                                <div class="capability-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                                    </svg>
+                                </div>
+                                <div class="capability-copy">
+                                    <h4 class="capability-title">Brand Identity</h4>
+                                    <p class="capability-description">Logos and visual systems designed to hold up across a full brand presence, not just look good on their own.</p>
+                                </div>
+                            </li>
+                            <li class="capability-item">
+                                <div class="capability-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="capability-copy">
+                                    <h4 class="capability-title">Graphic &amp; Photo Work</h4>
+                                    <p class="capability-description">Visual compositions and photo editing — retouching, composition, and color work in service of a clear message.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Founder Spotlight Section -->
-        <section class="spotlight" id="spotlight">
-            <div class="container">
-                <div class="spotlight-panel">
-                    <div class="spotlight-badge">Founder & CEO</div>
-                    <h2 class="spotlight-title">Lux Tech Empire</h2>
-                    <p class="spotlight-slogan">"The Empire of Digital Brilliance"</p>
-                    <div class="spotlight-content">
-                        <p class="spotlight-text">Leadership in the digital realm requires more than technical skill—it demands vision, creativity, and the courage to build what others only imagine.</p>
-                        <p class="spotlight-text">As founder of Lux Tech Empire, I architect digital ecosystems that merge cutting-edge development with strategic brand positioning. Every project is an expression of creative technology at its finest, where code becomes craft and design becomes destiny.</p>
-                        <p class="spotlight-text">My approach transcends conventional boundaries: I am a builder of systems, a strategist of digital presence, and an architect of brands that resonate. This is not about following trends—it's about creating the standards others aspire to reach.</p>
-                    </div>
+        <!-- Leadership -->
+        <section class="leadership" id="leadership">
+            <div class="container leadership-inner">
+                <span class="eyebrow">Leadership</span>
+                <blockquote class="leadership-quote">
+                    Leadership in the digital space isn't about following what's already working elsewhere — it's about being willing to build something before you know exactly how it will turn out.
+                </blockquote>
+                <div class="leadership-body">
+                    <p>Lux Tech Empire started as a way to bring development and design under one roof instead of splitting them across different people who never talk to each other. That's still the idea: a project should feel considered end to end, from the first line of code to the last pixel of the brand around it.</p>
+                    <p>I'd rather build fewer things well than take on everything that comes my way. If a project doesn't need what I do, I'll say so.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact -->
         <section class="contact" id="contact">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">Let's Connect</span>
-                    <h2 class="section-title">Get in Touch</h2>
+                    <span class="eyebrow">Contact</span>
+                    <h2 class="section-title">Get in touch</h2>
                 </div>
-                <div class="contact-grid">
-                    <a href="https://wa.me/2347046826770" class="contact-card" target="_blank" rel="noopener noreferrer">
-                        <div class="contact-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+
+                <div class="contact-list">
+                    <a href="https://wa.me/2347046826770" class="contact-row" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-row-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                             </svg>
                         </div>
-                        <h3 class="contact-title">WhatsApp</h3>
-                        <p class="contact-info">+234 704 682 6770</p>
+                        <div class="contact-row-copy">
+                            <span class="contact-row-label">WhatsApp</span>
+                            <span class="contact-row-value">+234 704 682 6770</span>
+                        </div>
                     </a>
-                    <a href="mailto:frannziluxx@gmail.com" class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <a href="mailto:frannziluxx@gmail.com" class="contact-row">
+                        <div class="contact-row-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                 <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
                         </div>
-                        <h3 class="contact-title">Email</h3>
-                        <p class="contact-info">frannziluxx@gmail.com</p>
+                        <div class="contact-row-copy">
+                            <span class="contact-row-label">Email</span>
+                            <span class="contact-row-value">frannziluxx@gmail.com</span>
+                        </div>
                     </a>
-                    <a href="https://t.me/Frannzi_Lux" class="contact-card" target="_blank" rel="noopener noreferrer">
-                        <div class="contact-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <a href="https://t.me/Frannzi_Lux" class="contact-row" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-row-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M21.5 2L2 10.5l6.5 2L18 6l-8 8.5l-.5 5.5 3-3.5 5 1.5L21.5 2z"></path>
                             </svg>
                         </div>
-                        <h3 class="contact-title">Telegram</h3>
-                        <p class="contact-info">@Frannzi_Lux</p>
+                        <div class="contact-row-copy">
+                            <span class="contact-row-label">Telegram</span>
+                            <span class="contact-row-value">@Frannzi_Lux</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -247,8 +260,18 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="container">
-                <p class="footer-text">© 2026 彡𝔽𝕣𝕒𝕟𝕟𝕫𝕚 𝕃𝕦𝕩彡 - Lux Tech Empire. All rights reserved.</p>
+            <div class="container footer-inner">
+                <div class="footer-identity">
+                    <p class="footer-name">Frannzi Lux</p>
+                    <p class="footer-tagline">Lux Tech Empire</p>
+                </div>
+                <nav class="footer-nav" aria-label="Footer">
+                    <a href="#about">About</a>
+                    <a href="#capabilities">Capabilities</a>
+                    <a href="#leadership">Leadership</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <p class="footer-copyright">© 2026 Frannzi Lux. All rights reserved.</p>
             </div>
         </footer>
     </main>
